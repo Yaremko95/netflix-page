@@ -45,20 +45,17 @@
 
                 
 
-                <div class="col-4 user-details">
-                    <!-- <p class="mail">student@strive.school</p>
-                    <p class = "pass" style="color: grey;">Password: ******</p>
-                    <p class="phone-num" style="color: grey;">Phone number:+98347128934</p>
-                    -->
+                <div class="col-4 user-details user-data">
+                  
                 </div>
               
 
-                <div class="col-4" id="rightSide">
-                    <a href="#" onclick="changeEmail()" >Change account email</a>
+                <div class="col-4 rightLinks" id="rightSide" >
+                    <a class="update-link" href="#"  >Change account email</a>
                     <br>
-                    <a href="#" >Change password</a>
+                    <a class="update-link" href="#" >Change password</a>
                     <br>
-                    <a href="#" >Change phone Number</a>
+                    <a class="update-link" href="#" >Change phone Number</a>
                     
                 </div>
                 
@@ -71,14 +68,14 @@
         <div class="col-4"></div>
             
 
-        <div class="col-4">
-            <i class="fab fa-amazon-pay"><b>PayPal   admin@strive.school</b></i>
+        <div class="col-4 user-details">
+            <i class="fab fa-amazon-pay"><b><span>admin@strive.school</span></b></i>
     
         </div>
       
 
         <div class="col-4" id="rightSide">
-            <a href="#" >Update Payment Info</a>
+            <a class="update-link" href="#" >Update Payment Info</a>
             <br>
             <a href="#" >Billing Details</a>
             
@@ -112,13 +109,13 @@
         <div class="col-4" style="color: grey;">PLAN DETAILS</div>
             
 
-        <div class="col-4">
-            <p><b>Premium: ULTRA HD</b></p>
+        <div class="col-4 user-details">
+            <p><b><span>Premium: ULTRA HD</span></b></p>
         </div>
       
 
         <div class="col-4" id="rightSide">
-            <a href="#" >Change plan</a>
+            <a class="update-link" href="#" >Change plan</a>
             
             
         </div>
@@ -175,22 +172,6 @@
     
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
 </div>
 
@@ -217,67 +198,150 @@ crossorigin="anonymous"
              password: "password",
              phone: "1234"
         }
+      
         ]
+
+    const userDetailsArr = ["striver@", "password", "1234", "admin@strive.school", "Premium: ULTRA HD" ]
        
     
     
-    const rightlinks=document.querySelectorAll(".rightLinks")
-    const userDetailsElement=document.querySelector(".user-details")
+    const rightlinks=document.querySelectorAll(".update-link")
+    const userDetailsElement=document.querySelector(".user-data")
+  //  const userDetails = document.querySelectorAll(".user-details p")
 
-    function showUserDetails () {
+// function changeDetails() {
+//     console.log(rightlinks, userDetailsElement)
+    
+// }
+
+// rightlinks.forEach((link) => {
+//     link.addEventListener('click', function() {
+//         console.log("hello")
+//     })
+// });
+
+ 
+ 
+
+    function showUserDetails (arr) {
         const output=[]
         details.forEach((element, num) => {
         output.push(
                     `
-                    <p><b>${element.email}</b></p>
-                    <p style="color: grey;">Password:  ${element.password}</p>
-                    <p style="color: grey;">Phone number:${element.phone}</p>
-                    </p>
-                    `
+                    <p><b><span>${userDetailsArr[0]}</span></b></p>
+                    <p style="color: grey;">Password: <span> ${userDetailsArr[1]}</span></p>
+                    <p style="color: grey;">Phone number:<span>${userDetailsArr[2]}</span></p>
+                    </p>  `
             )
-            
         });
         userDetailsElement.innerHTML=output.join('');
     }
 
     window.onload=function() {
         showUserDetails();
-    }
+       
 
+        let userDetails = document.querySelectorAll(".user-details span")
+        console.log(rightlinks, userDetails)
+        //loop to iterate through links to addEventListener 
+        for(let i=0; i<rightlinks.length; i++) {
 
-    function changeEmail() {
-        btnSave=addBtn()
-        const userDetails = document.querySelectorAll(".user-details p ")
-        console.log(userDetails)
-        userDetails[0].remove();
+         rightlinks[i].addEventListener('click', function() {
+            userDetailsArr[i]=userDetails[i].innerText 
 
-        let form =document.createElement('div')
-        form.className ="form-group"
-        let input = document.createElement ('input')
-        input.className ="form-control"
-        input.value = details[0].email;
+            //create form 
+            let form =document.createElement('div')
+            form.className ="form-group"
+            let input = document.createElement ('input')
+            input.className ="form-control"
+            input.value = userDetailsArr[i];
 
-        form.appendChild(input);
-        form.appendChild(btnSave)
-        userDetailsElement.prepend(form)
+            //create button
+            let btn=document.createElement('button')
+            btn.className="btn  btn-link btn-sm saveBtn"
+            btn.innerText="Save"
+            btn.type="button"
 
-    }
-
-
-    function addBtn() {
-                let btn=document.createElement('button')
-                btn.className="btn  btn-link btn-sm saveBtn"
-                btn.innerText="Save"
-                btn.type="button"
-                btn.onclick=function() {
-                  let input=btn.previousElementSibling.value
-                  details[0].email=input;
-                  btn.parentElement.remove();
-                  showUserDetails();
-                 
-                }
-              return btn
+            //save data to userDetailsArr
+            btn.onclick=function() {
+                 let newInput=btn.previousElementSibling.value
+                userDetailsArr[i]=newInput;
+                console.log(userDetailsArr)
+                details[0].email=newInput;
+                btn.parentElement.remove();
+                showUserDetails(userDetailsArr);
+                userDetails=document.querySelectorAll(".user-details span")
             }
+            form.appendChild(input);
+            form.appendChild(btn)
+          
+            userDetails[i].parentNode.replaceChild(form, userDetails[i])
+            console.log(userDetails)
+           
+           
+        })
+    }
+    }
+
+
+    // function changeEmail() {
+    //     btnSave=addBtn()
+    //    // const userDetails = document.querySelectorAll(".user-details p ")
+    //     console.log(userDetails)
+    //     userDetails[0].remove();
+
+    //     let form =document.createElement('div')
+    //     form.className ="form-group"
+    //     let input = document.createElement ('input')
+    //     input.className ="form-control"
+    //     input.value = details[0].email;
+
+    //     form.appendChild(input);
+    //     form.appendChild(btnSave)
+    //     userDetailsElement.prepend(form)
+
+    // }
+
+    // function createForm(inputValue) {
+
+    //     let form =document.createElement('div')
+    //     form.className ="form-group"
+    //     let input = document.createElement ('input')
+    //     input.className ="form-control"
+    //     input.value = inputValue;
+
+    //     let btn=document.createElement('button')
+    //     btn.className="btn  btn-link btn-sm saveBtn"
+    //     btn.innerText="Save"
+    //     btn.type="button"
+    //     btn.onclick=function() {
+    //     let input=btn.previousElementSibling.value
+    //     details[0].email=input;
+    //     btn.parentElement.remove();
+    //    // showUserDetails();
+                 
+    //             }
+
+    //     form.appendChild(input);
+    //     form.appendChild(btnSave)
+    //     userDetailsElement.prepend(form)
+    // }
+
+
+    // function addBtn() {
+    //             let btn=document.createElement('button')
+    //             btn.className="btn  btn-link btn-sm saveBtn"
+    //             btn.innerText="Save"
+    //             btn.type="button"
+    //             btn.onclick=function() {
+    //               let input=btn.previousElementSibling.value
+    //               details[0].email=input;
+    //               btn.parentElement.remove();
+    //               showUserDetails();
+                 
+    //             }
+    //           return btn
+    //         }
 
 
 
