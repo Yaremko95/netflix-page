@@ -188,13 +188,13 @@
              <div class="carousel-content">
                  <div class="carousel">
                      <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
+                         <a class="g-img" href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUBhwlyoMkA1BLEX68rTt0N59_pqmudJfyECmw0J95cS8b_Rk2GfyLE3YN4UD0sYpVbM8DjhxdKWPXpfawCZeKZ7SGRwnVmwts49wcN2nI9xceigR-jBpNi5YQal.jpg?r=28f" alt=""></a>
                      </div>
                      <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
+                         <a class="g-img" href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
                      </div>
                      <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
+                         <a class="g-img" href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
                      </div>
                      <div class="film">
                          <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
@@ -372,29 +372,29 @@ leftArrow.addEventListener('click', () => {
 });
 
 
-films.forEach((film) => {
-	film.addEventListener('mouseenter', (e) => {
-		const element = e.currentTarget;
-		setTimeout(() => {
-			films.forEach(film => film.classList.remove('hover'));
-            cardOverlay.forEach(card=>card.setAttribute("style", "display:none") );
-			element.classList.add('hover');
-             cardOverlay.forEach(card=>card.setAttribute("style", "display:block") );
+// films.forEach((film) => {
+// 	film.addEventListener('mouseenter', (e) => {
+// 		const element = e.currentTarget;
+// 		setTimeout(() => {
+// 			films.forEach(film => film.classList.remove('hover'));
+//             cardOverlay.forEach(card=>card.setAttribute("style", "display:none") );
+// 			element.classList.add('hover');
+//              cardOverlay.forEach(card=>card.setAttribute("style", "display:block") );
             
-		}, 300);
-	});
-});
+// 		}, 300);
+// 	});
+// });
 
-;
+// ;
 
-for (let i=0; i<row.length; i++) {
-    row[i].addEventListener('mouseleave', () => {
-	films.forEach(film => film.classList.remove('hover'));
-    cardOverlay.forEach(card=>card.setAttribute("style", "display:none") );
+// for (let i=0; i<row.length; i++) {
+//     row[i].addEventListener('mouseleave', () => {
+// 	films.forEach(film => film.classList.remove('hover'));
+//     cardOverlay.forEach(card=>card.setAttribute("style", "display:none") );
 
-});
+// });
 
-}
+// }
 
 
 

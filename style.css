@@ -121,11 +121,33 @@ h5 {
 	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
 }
 
-.recommended-films .carousel-content .carousel .film.hover,
+/* .recommended-films .carousel-content .carousel .film.hover,
 .original-films .carousel-content .carousel .film.hover {
-	transform: scale(1.2);
-    transform-origin: center;
+	transform: scale(1.5);
+	transform-origin: center;
+	
    
+} */
+.film img {
+	transition: transform 200ms;
+	overflow: visible;
+}
+	
+
+
+.carousel:focus-within .film,
+.carousel:hover .film{
+	transform: translateX(-10%);
+}
+.film:focus ~ .film,
+.film:hover ~ .film{
+	transform: translateX(10%);
+}
+.carousel .film img:focus,
+.film img:hover {
+	transform: scale(1.2);
+	transform-origin: left;
+	
 }
 /* .hide {
     display:none
