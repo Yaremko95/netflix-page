@@ -1,0 +1,251 @@
+
+.navIcons{
+  padding: 20px;
+}
+
+.pagination a.active {
+ background-color: #4CAF50;
+ color: white;
+ border: 1px solid #4CAF50;
+}
+
+select {
+ width: 110px;
+ padding: 16px 20px;
+ border: none;
+ border-radius: 4px;
+ background-color: transparent;
+ color: white;
+}
+.secondNav{
+ display: inline-block;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    color: whitesmoke;
+}
+
+.content {
+	width: 90%;
+	margin: auto;
+}
+
+
+.container-fluid {
+    background-color: black;
+}
+
+h5 {
+    color: whitesmoke;
+}
+/*  */
+
+
+.recommended-films, 
+.original-films {
+	margin-bottom: 70px;
+}
+
+.recommended-films .main-content,
+.original-films .main-content {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.recommended-films .main-content .left-arrow,
+.recommended-films .main-content .right-arrow,
+.original-films .main-content .left-arrow,
+.original-films .main-content .right-arrow
+ {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 20px;
+	height: 20%;
+	top: calc(50% - 10%);
+	line-height: 40px;
+	width: 20px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.recommended-films .main-content .left-arrow:hover,
+.recommended-films .main-content .right-arrow:hover,
+.original-films .main-content .left-arrow:hover,
+.original-films .main-content .right-arrow:hover {
+	background: rgba(0,0,0, .9);
+}
+
+.recommended-films .main-content .left-arrow,
+.original-films .main-content .left-arrow {
+	left: 0;
+}
+
+.recommended-films .main-content .right-arrow,
+.original-films .main-content .right-arrow  {
+	right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.recommended-films .carousel-content,
+.original-films .carousel-content  {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.recommended-films .carousel-content .carousel,
+.original-films .carousel-content .carousel
+ {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.recommended-films .carousel-content .carousel .film ,
+.original-films .carousel-content .carousel .film{
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.recommended-films .carousel-content .carousel .film.hover,
+.original-films .carousel-content .carousel .film.hover {
+	transform: scale(1.2);
+    transform-origin: center;
+   
+}
+/* .hide {
+    display:none
+} */
+    
+
+/* .recommended-films .carousel-content .carousel .film.hover + .hide {
+    display: block;
+} */
+
+
+.recommended-films .carousel-content .carousel .film img,
+.original-films .carousel-content .carousel .film img {
+	width: 100%;
+	vertical-align: top;
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+
+
+	
+
+    .recommended-films .carousel-content,
+    .original-films .carousel-content {
+		overflow: visible;
+	}
+
+    .recommended-films .carousel-content .carousel,
+    .original-films .carousel-content .carousel {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.recommended-films .indicators,
+	.recommended-films .left-arrow,
+    .recommended-films .right-arrow,
+    .original-films .indicators,
+	.original-films .left-arrow,
+	.original-films .right-arrow {
+		display: none;
+	}
+}
+
+footer{
+	
+    bottom: 0;
+    color: #b3b3b3;
+    font-size: 1.2rem;
+}
+.footer-distributed{
+	background-color: rgba(0, 0, 0, 0.877);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	width: 100%;
+	
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+	margin-top: 80px;
+    
+    
+   
+    
+}
+.fa {
+  padding: 5px;
+  font-size: 15px;
+  width: 25px;
+  
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+ 
+}
+.fa-facebook {
+  background: #737373;
+  color: white;
+}
+.fa-instagram {
+  background: #737373;
+  color: white;
+}
+.fa-twitter {
+  background: #737373;
+  color: white;
+}
+.fa-youtube {
+  background: #737373;
+  border-radius: 5px;
+  color: white;
+}
+ 
+ #para{
+     font-size: 11px;
+     padding-left: 1px;
+     margin-top: 20px;
+ }
+ #service{
+     border: 1px solid #b3b3b3;
+    width: 100px;
+    padding: 10px;
+ }
+ #para1{
+    
+     font-size: 11px;
+     margin-top: 70px;
+ }
+ #para2{
+    
+     font-size: 11px;
+     margin-top: 70px;
+ }
+ #para3{
+    
+     font-size: 11px;
+     margin-top: 70px;
+ }
+
