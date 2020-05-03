@@ -29,173 +29,94 @@ select {
 }
 
 body {
-	background-color: black;
+	background-color: #141414;;
     font-family: 'Open Sans', sans-serif;
     color: whitesmoke;
 }
 
-.content {
-	width: 90%;
-	margin: auto;
-}
-
-
-.container-fluid {
-    background-color: black;
-}
-
-h5 {
-    color: whitesmoke;
-}
-/*  */
-
-
-.recommended-films, 
-.original-films {
-	margin-bottom: 70px;
-}
-
-.recommended-films .main-content,
-.original-films .main-content {
-	display: flex;
-	align-items: center;
+.row {
 	position: relative;
+	
 }
+.carousel-content {
+	padding: 50px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+.carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+.film {
+	position: relative;
+	display: block;
+	flex: 1 1 0px;
+	transition: transform 700ms;
+	
+	
+}
+.film img {
+	width:250px;
+	
 
-.recommended-films .main-content .left-arrow,
-.recommended-films .main-content .right-arrow,
-.original-films .main-content .left-arrow,
-.original-films .main-content .right-arrow
- {
+}
+.left-arrow, 
+.right-arrow {
 	position: absolute;
+	z-index: 10;
 	border: none;
 	background: rgba(0,0,0,0.3);
 	font-size: 20px;
 	height: 20%;
-	top: calc(50% - 10%);
+	top: 50%;
 	line-height: 40px;
-	width: 20px;
+	width: 30px;
 	color: #fff;
 	cursor: pointer;
-	z-index: 500;
+   
 	transition: .2s ease all;
 }
-
-.recommended-films .main-content .left-arrow:hover,
-.recommended-films .main-content .right-arrow:hover,
-.original-films .main-content .left-arrow:hover,
-.original-films .main-content .right-arrow:hover {
-	background: rgba(0,0,0, .9);
-}
-
-.recommended-films .main-content .left-arrow,
-.original-films .main-content .left-arrow {
+.left-arrow {
 	left: 0;
 }
-
-.recommended-films .main-content .right-arrow,
-.original-films .main-content .right-arrow  {
-	right: 0;
+.right-arrow {
+	right: 10px;
 }
-
-/* ---- ----- ----- Carousel ----- ----- ----- */
-.recommended-films .carousel-content,
-.original-films .carousel-content  {
-	width: 100%;
-	padding: 20px 0;
-	overflow: hidden;
-	scroll-behavior: smooth;
-}
-
-.recommended-films .carousel-content .carousel,
-.original-films .carousel-content .carousel
- {
-	display: flex;
-	flex-wrap: nowrap;
-}
-
-.recommended-films .carousel-content .carousel .film ,
-.original-films .carousel-content .carousel .film{
-	min-width: 20%;
-	transition: .3s ease all;
-	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
-}
-
-/* .recommended-films .carousel-content .carousel .film.hover,
-.original-films .carousel-content .carousel .film.hover {
-	transform: scale(1.5);
-	transform-origin: center;
-	
-   
-} */
-.film img {
-	transition: transform 200ms;
-	overflow: visible;
-}
-	
-
-
 .carousel:focus-within .film,
-.carousel:hover .film{
-	transform: translateX(-10%);
+.carousel:hover .film {
+transform: translateX(-25%);
 }
+
 .film:focus ~ .film,
-.film:hover ~ .film{
-	transform: translateX(10%);
-}
-.carousel .film img:focus,
-.film img:hover {
-	transform: scale(1.2);
-	transform-origin: left;
-	
-}
-/* .hide {
-    display:none
-} */
-    
-
-/* .recommended-films .carousel-content .carousel .film.hover + .hide {
-    display: block;
-} */
-
-
-.recommended-films .carousel-content .carousel .film img,
-.original-films .carousel-content .carousel .film img {
-	width: 100%;
-	vertical-align: top;
+.film:hover ~ .film {
+transform: translateX(25%);
 }
 
-/* ---- ----- ----- Media Queries ----- ----- ----- */
-@media screen and (max-width: 800px) {
-	header .logotipo {
-		margin-bottom: 10px;
-		font-size: 30px;
-	}
+.carousel .film:focus,
+.carousel .film:hover {
+transform: scale(1.5);
+z-index: 1;
 
+box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+.imageTitle {
+	opacity: 0;
+}
+.film:focus .imageTitle,
+.film:hover .imageTitle {
+opacity: 1;
+}
+.chosenFilm {
+	justify-content: space-between;
+}
+.img-content {
+	position: relative;
+	 box-shadow: inset  130px 0 80px 0px  black" 
 
-
-	
-
-    .recommended-films .carousel-content,
-    .original-films .carousel-content {
-		overflow: visible;
-	}
-
-    .recommended-films .carousel-content .carousel,
-    .original-films .carousel-content .carousel {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 20px;
-	}
-
-	.recommended-films .indicators,
-	.recommended-films .left-arrow,
-    .recommended-films .right-arrow,
-    .original-films .indicators,
-	.original-films .left-arrow,
-	.original-films .right-arrow {
-		display: none;
-	}
+}
+.img-content img {
+	position: relative;
+	z-index:-1;
 }
 
 footer{

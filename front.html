@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+    
     <link rel="stylesheet" href="./style.css">
    
     
@@ -28,10 +33,10 @@
   </style>
 
 <body>
-  <!-- Swiper -->
+  <!-- Header beginning -->
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: black!important;">
-    <a class="navbar-brand" href="#" style="font-family: Aclonica; font-size: 30px; color: red; padding-left: 40px; border-start-start-radius: 30px;">NETFLIX</a>
+    <a href="front.html" class="navbar-brand" href="#" style="font-family: Aclonica; font-size: 30px; color: red; padding-left: 40px; border-start-start-radius: 30px;">NETFLIX</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -62,220 +67,107 @@
     <a href="#" class="navIcons" style="color: white; text-decoration: none;"><b>KIDS</b></a>
    
     <a href="#" class="navIcons" style="box-sizing: border-box; color: white; text-decoration: none;" ><i class="fa fa-bell"></i></a>
+    <a href="account.html" class="navIcons" style="box-sizing: border-box; color: white; text-decoration: none;" ><i class="material-icons">person</i></a>
+
     <div class="pagination">
-      <i class="fa fa-caret-down" style="font-size:24px; color: white;"></i>
-      
-      
+        
+      <a href="edit.html"><i class="fa fa-caret-down" style="font-size:24px; color: white;"></i></a>
+     
     </div>
   
   </nav>
-  <div class="secondNav"> 
-    <div class="row row-cols-3">
-    
-    
-      <h1 class="display-7 col-12" style="color: white; margin-left: 40px;"><b>TV Shows</b></h1>
+
+
+
+<div class="container-fluid " style="padding-top: 0px; position: relative;">
+    <div class="row">
+        <video  autoplay muted style="height:700px; width:100%; object-fit: cover;">
+            <source src="./img/The 100 - Official Trailer.mp4" type="video/mp4">
+            
+            Your browser does not support the video tag.
+          </video>
+<div class="row mx-4 mt-4 " style="position: absolute;"> 
+    <div class="col-8">
+      <h2 class="genreTitle" style="color: white; margin-left: 40px;"><b>TV Shows</b></h2>
     </div>
-
-<div class="col-4">
-<form>
-  <select id="country" name="country">
-    <option value="" style="color: white; background-color:black;">Genres</option>
-    <option value="" style="background-color:black;">Horror</option>
-    <option value="" style="background-color:black;">Comedy</option>
-    </select>
-  </form>
-</div>
-
-
+    <div class="col-2">
+    <form>
+    <select id="genres" name="genres" style="width: 150px; background-color: black; border: 1px solid white;" >
+        <option value="" style="color: white; background-color:black;">Genres</option>
+        <option value="horror" style="background-color:black;">Horror</option>
+        <option value="comedy" style="background-color:black;">Comedy</option>
+        <option value="drama" style="background-color:black;">Drama</option>
+        </select>
+    </form>
+    </div>
   </div>
-</div>
- 
-  <div class="container-fluid">
-      
-    <div class="row my-4 pb-4">
-       <div class="recommended-films content">
-        <h5>Recommended Films</h5>
-        <div class="main-content">
-            <button role="button" id="left-arrow" class="left-arrow"> <span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
-            <div class="carousel-content">
-                <div class="carousel">
-                    <div class="film">
-                        <div class="card">
-                             <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                             <div class="card-img-overlay " style="display: none;">
-                                <h5 class="card-title">Card title</h5>
-                                
-                              </div>
-                        </div>
-                       </div>
-               
-                      
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUBhwlyoMkA1BLEX68rTt0N59_pqmudJfyECmw0J95cS8b_Rk2GfyLE3YN4UD0sYpVbM8DjhxdKWPXpfawCZeKZ7SGRwnVmwts49wcN2nI9xceigR-jBpNi5YQal.jpg?r=28f" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                    <div class="film">
-                        <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                    </div>
-                </div>
-            </div>
-
-            <button role="button" id="right-arrow" class="right-arrow"><span class="carousel-control-next-icon" aria-hidden="true"></button>
-        </div>
-    </div>  
+  <div class="row" style="position:absolute; top:25%; left:40px">
+      <img src="./img/hundred_logo.png"/>
+  </div>
+  <div class="row" style="position:absolute; top:45%; left:40px">
+    <div class="col-6">
+         <p style="font-size: 1.3rem;">One hundred young exiles from a dying 
+        space station are sent to Earth 97 years after
+         a nuvlear apocalypse to test if the planet is now inhabitable</p>
     </div>
+     
+  </div>
+  <div class="row" style="position:absolute; top:60%; left:40px">
+    <button type="button" class="btn mx-4" style="background-color:whitesmoke; font-size: 1.2rem; font-weight: bold; padding: 10px 15px;"><i class="fa fa-play" ></i>PLAY</button>
+    <button type="button" class="btn btn-secondary " style="font-size: 1.2rem; font-weight: bold; padding: 10px 15px;" ><i class="fa fa-check-square-o"></i>ADD TO LIST</button>
+  </div>
+  <div class="row" style="position: absolute; top:70%; left:40px">
+        
+      <div class="carousel-content ">
+        <div class="carousel myList">
+        </div>
+    </div>
+  </div>
+    
 
-
-   
-    <div class="row mb-4 pb-4">
-        <div class="original-films content">
-            <h5>Original Netflix Films</h5>
-         <div class="main-content">
-             <button role="button" id="left-arrow2" class="left-arrow"> <span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
-             <div class="carousel-content">
-                 <div class="carousel">
-                     <div class="film">
-                         <a class="g-img" href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUBhwlyoMkA1BLEX68rTt0N59_pqmudJfyECmw0J95cS8b_Rk2GfyLE3YN4UD0sYpVbM8DjhxdKWPXpfawCZeKZ7SGRwnVmwts49wcN2nI9xceigR-jBpNi5YQal.jpg?r=28f" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a class="g-img" href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a class="g-img" href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                     <div class="film">
-                         <a href="#"><img src="https://occ-0-3179-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABac60hGdMo4BFL6AYoOz6RcJV8i9Ci0Lh5ZwNWj9AYiWgK_G05KL5UbiDYB22C3pwcZrkyNTJG7DwQJdknzFmRwVS0Q.webp?r=567" alt=""></a>
-                     </div>
-                 </div>
-             </div>
- 
-             <button role="button" id="right-arrow2" class="right-arrow"><span class="carousel-control-next-icon" aria-hidden="true"></button>
-         </div>
-     </div>  
-     </div>
-   
+    </div>
 </div>
+
+
+  <!-- main content -->
+ 
+<div class="container-fluid ">
+    <div class="row ml-4 ">
+        <button role="button" id="left-arrow" class="left-arrow"> <span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
+        <div class="carousel-content recommended">
+            <h4 class="pt-4">Recommended by NetFlix</h4>
+                <div class="carousel">
+            </div>
+        </div>
+         <button role="button" id="right-arrow" class="right-arrow"><span class="carousel-control-next-icon" aria-hidden="true"></button>
+    </div>
+    <div class="row chosenFilm "  style="justify-content: space-between;" >
+   
+    </div>
+    <div class="row ml-4">
+       
+        <button role="button" id="left-arrow2" class="left-arrow"> <span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
+        <div class="carousel-content popular">
+            <h4 class="pt-4">Popular on Netflix</h4>
+                <div class="carousel">
+            </div>
+        </div>
+         <button role="button" id="right-arrow2" class="right-arrow"><span class="carousel-control-next-icon" aria-hidden="true"></button>
+    </div>
+    <div class="row  "  style="justify-content: space-between;" >
+   
+    </div>
+</div>
+<!-- main content ends -->
 
 <footer class="footer-distributed">
     <div class="row row-cols-6">
-
         <div class="col-2"></div>
-
-       
         <div class="col-2 ">
-        
-           
-
                 <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
                 <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
                 <a href="https://twitter.com/explore"><i class="fa fa-twitter"></i></a>
                 <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
-            
-            
             </br>
             <div id="para">
                 <p>Audio and subtitles</p>
@@ -286,118 +178,565 @@
                 <p>&copy;1997-2019 Netflix</p>
             </div>
         </div>
-        
-
         <div id="para1" class="col-2 ">
             <p>Audio description</p>
             <p>Investor Relations</p>
             <p>Legal Notices</p>
         </div>
-    
-    
-
-    
-
         <div id="para2" class="col-2 ">
             <p>Help Center</p>
             <p>Jobs</p>
             <p>Cookie Preferences</p>
         </div>
-   
-    
         <div id="para3" class="col-2">
             <p>Gift Cards</p>
             <p>Terms of Use</p>
             <p>Corporate Informations</p>
         </div>
-    
         <div class="col-2"></div>
-
-
     </div>
-
 </footer>
 
+<script>
+    const row = document.querySelectorAll('.carousel-content');
+    
+    const leftArrow = document.getElementById('left-arrow');
+    const rightArrow = document.getElementById('right-arrow');
+
+    const leftArrow2 = document.getElementById('left-arrow2');
+    const rightArrow2 = document.getElementById('right-arrow2');
+
+
+    rightArrow.addEventListener('click', () => {
+        row[0].scrollLeft += row[0].offsetWidth;
+    });
+
+    
+    leftArrow.addEventListener('click', () => {
+        row[0].scrollLeft -= row[0].offsetWidth;
+    });
+
+    rightArrow2.addEventListener('click', () => {
+        row[1].scrollLeft += row[1].offsetWidth;
+    });
+
+    
+    leftArrow2.addEventListener('click', () => {
+        row[1].scrollLeft -= row[1].offsetWidth;
+    });
+  
+
+    const filmList=[
+        {
+            name: "The 100",
+            image:"hundred.png",
+            image_lg: "hundred_lg.png",
+            logo: "hundred_logo.png",
+            genre: "drama",
+            year: "2018",
+            description:`One hundred young exiles from a dying 
+                    space station are sent to Earth 97 years after
+                     a nuvlear apocalypse to test if the planet is now inhabitable`
+
+        },
+        {
+            name: "Friends",
+            image:"friends.png",
+            image_lg: "friends-big.jpg",
+            logo: "friends-logo.png",
+            genre: "comedy",
+            year: "2018",
+            description:`Rachel runs from her wedding and meets the friends in the coffe place. 
+                    Ross is depressed about his divorce but 
+                    he still has a crush on Rachel`
+
+        },
+        {
+            name: "Vikings",
+            image:"vikings.jpg",
+            image_lg: "vikings_lg.jpg",
+            logo:"vikings_logo.jpg",
+            genre: "drama",
+            year: "2019",
+            description:`Regnar Lothbrok is determined to sail west to discover 
+                        new lands and riches despite an
+                        intimidating warning from Earl Haraldson`
+
+        },
+        {
+            name: "Outlander",
+            image:"outlander.png",
+            image_lg: "outlander_lg.jpg",
+            logo:"outlander_logo.png",
+            genre: "drama",
+            year: "2017",
+            description:`While on a second honeymoon in Scotland, former army nurse Claire 
+                sumbles on a gateaway to the past and falls in with a band of Highland robels;`
+
+        },
+        {
+            name: "Suits",
+            image:"suits.png",
+            image_lg: "suits_lg.jpg",
+            logo:"suits_logo.png",
+            genre: "drama",
+            year: "2019",
+            description:`When Harvey's promotion requires him to recruit and
+                 hire a graduate of Harvard Law, he chooses Mike Ross. 
+                 But Mike doesn't actually have a law degree`
+
+        },
+        {
+            name: "Crazy Stupid Love",
+            image:"crazy-stupid-love.jpg",
+            image_lg: "crazy-stupid-love_lg.jpg",
+            logo: "crazy-stupid-love_logo.jpg",
+            genre: "comedy",
+            year: "2011",
+            description:`When Cal learns that his wife wants a divorce,
+             he reluctantly faces the prospect of single life with the counsel of a smooth young bachelor`
+
+        
+
+        },
+        {
+            name: "Deliver us from devil",
+            image:"deliever-us-from-devil.jpg",
+            image_lg: "deliver-us-from-devil_lg.jpg",
+            logo: "deliever-us-from-devil_logo.jpg",
+            genre: "horror",
+            year: "2014",
+            description:`While investigating a bizarre case, a New York City police officer meets a priest who convinces him the incident is related to demonic possession`
+
+        },
+        // {
+        //     name: "Vikings ",
+        //     image:"vikings.jpg",
+        //     image_lg: "vikings_lg.jpg",
+        //     logo:"vikings_logo.jpg",
+        //     genre: "drama",
+        //     year: "2019",
+        //     description:`Regnar Lothbrok is determined to sail west to discover 
+        //                 new lands and riches despite an
+        //                 intimidating warning from Earl Haraldson`
+
+        // },
+        {
+            name: "Friends with benefits",
+            image:"friends-with-benefites.jpg",
+            image_lg: "friends-with-benefites_lg.jpg",
+            logo:"friends-with-benefites_logo.jpg",
+            genre: "comedy",
+            year: "2011",
+            description:`Casual sex is just what these commitment-phobic friends crave. But romance has a funny way of sneaking up on people...`
+
+        },
+        // {
+        //     name: "Suits",
+        //     image:"suits.png",
+        //     image_lg: "suits_lg.jpg",
+        //     logo:"suits_logo.png",
+        //     genre: "drama",
+        //     year: "2019",
+        //     description:`When Harvey's promotion requires him to recruit and
+        //          hire a graduate of Harvard Law, he chooses Mike Ross. 
+        //          But Mike doesn't actually have a law degree`
+
+        // },
+        // {
+        //     name: "The 100",
+        //     image:"hundred.png",
+        //     image_lg: "hundred_lg.png",
+        //     logo: "hundred_logo.png",
+        //     genre: "drama",
+        //     year: "2018",
+        //     description:`One hundred young exiles from a dying 
+        //             space station are sent to Earth 97 years after
+        //              a nuvlear apocalypse to test if the planet is now inhabitable`
+
+        // },
+        // {
+        //     name: "Friends",
+        //     image:"friends.png",
+        //     image_lg: "friends-big.jpg",
+        //     logo: "friends-logo.png",
+        //     genre: "comedy",
+        //     year: "2018",
+        //     description:`Rachel runs from her wedding and meets the friends in the coffe place. 
+        //             Ross is depressed about his divorce but 
+        //             he still has a crush on Rachel`
+
+        // },
+        // {
+        //     name: "Vikings ",
+        //     image:"vikings.jpg",
+        //     image_lg: "vikings_lg.jpg",
+        //     logo:"vikings_logo.jpg",
+        //     genre: "drama",
+        //     year: "2019",
+        //     description:`Regnar Lothbrok is determined to sail west to discover 
+        //                 new lands and riches despite an
+        //                 intimidating warning from Earl Haraldson`
+
+        // },
+        // {
+        //     name: "Outlander",
+        //     image:"outlander.png",
+        //     image_lg: "outlander_lg.jpg",
+        //     logo:"outlander_logo.png",
+        //     genre: "drama",
+        //     year: "2017",
+        //     description:`While on a second honeymoon in Scotland, former army nurse Claire 
+        //         sumbles on a gateaway to the past and falls in with a band of Highland robels;`
+
+        // },
+        // {
+        //     name: "Suits",
+        //     image:"suits.png",
+        //     image_lg: "suits_lg.jpg",
+        //     logo:"suits_logo.png",
+        //     genre: "drama",
+        //     year: "2019",
+        //     description:`When Harvey's promotion requires him to recruit and
+        //          hire a graduate of Harvard Law, he chooses Mike Ross. 
+        //          But Mike doesn't actually have a law degree`
+
+        // },
+        // {
+        //     name: "Crazy Stupid Love",
+        //     image:"crazy-stupid-love.jpg",
+        //     image_lg: "crazy-stupid-love_lg.jpg",
+        //     logo: "crazy-stupid-love_logo.jpg",
+        //     genre: "comedy",
+        //     year: "2011",
+        //     description:`When Cal learns that his wife wants a divorce,
+        //      he reluctantly faces the prospect of single life with the counsel of a smooth young bachelor`
+
+        // },
+        // {
+        //     name: "Friends",
+        //     image:"friends.png",
+        //     image_lg: "friends-big.jpg",
+        //     logo: "friends-logo.png",
+        //     genre: "comedy",
+        //     year: "2018",
+        //     description:`Rachel runs from her wedding and meets the friends in the coffe place. 
+        //             Ross is depressed about his divorce but 
+        //             he still has a crush on Rachel`
+
+        // },
+        // {
+        //     name: "Vikings ",
+        //     image:"vikings.jpg",
+        //     image_lg: "vikings_lg.jpg",
+        //     logo:"vikings_logo.jpg",
+        //     genre: "drama",
+        //     year: "2019",
+        //     description:`Regnar Lothbrok is determined to sail west to discover 
+        //                 new lands and riches despite an
+        //                 intimidating warning from Earl Haraldson`
+
+        // },
+        // {
+        //     name: "Outlander",
+        //     image:"outlander.png",
+        //     image_lg: "outlander_lg.jpg",
+        //     logo:"outlander_logo.png",
+        //     genre: "drama",
+        //     year: "2017",
+        //     description:`While on a second honeymoon in Scotland, former army nurse Claire 
+        //         sumbles on a gateaway to the past and falls in with a band of Highland robels;`
+
+        // },
+        // {
+        //     name: "Suits",
+        //     image:"suits.png",
+        //     image_lg: "suits_lg.jpg",
+        //     logo:"suits_logo.png",
+        //     genre: "drama",
+        //     year: "2019",
+        //     description:`When Harvey's promotion requires him to recruit and
+        //          hire a graduate of Harvard Law, he chooses Mike Ross. 
+        //          But Mike doesn't actually have a law degree`
+
+        // }
+       
+    ]
+        choseGenre()
+       
+        
+     
+
+        function showFilmList() {
+           let filmCarousel= document.querySelector(".recommended .carousel")
+            const filmSlider =[]
+            filmList.forEach(film => {
+                let element=`
+                <div class="film ">
+                    <a href="#"><img src="./img/${film.image}" alt=""></a>
+                    <div class="card-img-overlay imageTitle">
+                        <i class="fa fa-play" style="position:absolute; left:15px; top:40%; cursor:pointer; font-size:25px; color:white"></i>
+                    <h5 class="card-title" style=" position:absolute; left:15px; top:70%">${film.name}</h5>
+                    <a class="addToList"   style="background-color:transparent; color:whitesmoke; position:absolute; right:15px; top:65%; cursor:pointer">
+                        <i class="fa fa-plus-square-o" style="font-size:24px"></i>
+                        </a>
+                    </div>
+                </div>
+                `
+                filmSlider.push(element)
+            });
+            filmCarousel.innerHTML=filmSlider.join('');
+        }
+
+
+
+        function showRow2() {
+           let filmCarousel= document.querySelector(".popular .carousel")
+            const filmRow =[]
+            filmList.slice().reverse().forEach(film => {
+                let element=`
+                <div class="film ">
+                    <a href="#"><img src="./img/${film.image}" alt=""></a>
+                    <div class="card-img-overlay imageTitle">
+                    <h5 class="card-title">${film.name}</h5>
+                    </div>
+                </div>
+                `
+                filmRow.push(element)
+            });
+            filmCarousel.innerHTML=filmRow.join('');
+        }
+
+        
+
+
+
+
+        function choseGenre( ) {
+             document.getElementById("genres").addEventListener('change', function(e) {
+            let filmCarousel= document.querySelector(".recommended .carousel")
+            let genreTitle=document.querySelector('.genreTitle')
+            const filmSlider =[]
+               if(e.target.value==="drama") {
+                genreTitle.innerText="Drama films"
+                filmList.forEach(film => {
+                    if(film.genre==="drama") {
+                        let element=`
+                    <div class="film ">
+                        <a href="#"><img src="./img/${film.image}" alt=""></a>
+                        <div class="card-img-overlay imageTitle">
+                        <h5 class="card-title">${film.name}</h5>
+                        <a class="addToList"   style="background-color:transparent; color:whitesmoke; position:absolute; right:15px; top:65%; cursor:pointer">
+                        <i class="fa fa-plus-square-o" style="font-size:24px"></i>
+                        </a>
+                       
+                        </div>
+                    </div>
+                    `
+                    filmSlider.push(element) 
+                }
+            });
+            } else if (e.target.value==="comedy") {
+                genreTitle.innerText="Comedy films"  
+                filmList.forEach(film => {
+                    if(film.genre==="comedy") {
+                        let element=`
+                    <div class="film ">
+                        <a href="#"><img src="./img/${film.image}" alt=""></a>
+                        <div class="card-img-overlay imageTitle">
+                        <h5 class="card-title">${film.name}</h5>
+                        <a class="addToList"   style="background-color:transparent; color:whitesmoke; position:absolute; right:15px; top:65%; cursor:pointer">
+                        <i class="fa fa-plus-square-o" style="font-size:24px"></i>
+                        </a>
+                        </div>
+                    </div>
+                    `
+                    filmSlider.push(element) 
+                }
+            });
+            } else if (e.target.value==="horror") {
+                genreTitle.innerText="Horror films"
+                filmList.forEach(film => {
+                    if(film.genre==="horror") {
+                        let element=`
+                    <div class="film ">
+                        <a href="#"><img src="./img/${film.image}" alt=""></a>
+                        <div class="card-img-overlay imageTitle">
+                        <h5 class="card-title">${film.name}</h5>
+                        <a class="addToList"   style="background-color:transparent; color:whitesmoke; position:absolute; right:15px; top:65%; cursor:pointer">
+                        <i class="fa fa-plus-square-o" style="font-size:24px"></i>
+                        </a>
+                        </div>
+                    </div>
+                    `
+                    filmSlider.push(element) 
+                }
+            }); 
+            } else {
+                filmList.forEach(film => {
+                let element=`
+                <div class="film ">
+                    <a href="#"><img src="./img/${film.image}" alt=""></a>
+                    <div class="card-img-overlay imageTitle">
+                    <h5 class="card-title">${film.name}</h5>
+                    <a class="addToList"   style="background-color:transparent; color:whitesmoke; position:absolute; right:15px; top:65%; cursor:pointer">
+                        <i class="fa fa-plus-square-o" style="font-size:24px"></i>
+                        </a>
+                    </div>
+                </div>
+                `
+                filmSlider.push(element)
+            });
+            }
+            filmCarousel.innerHTML=filmSlider.join('');
+            let  films =document.querySelectorAll('.film')
+            let filmsNames =document.querySelectorAll('.card-title') 
+             displayFilm(films, filmsNames)
+            addBtn=document.querySelectorAll('.addToList')
+            addToList(addBtn)
+               
+           })
+ 
+        }
+
+
+    
+      function addToList(addBtn) {
+        listRow=document.querySelector('.myList');
+        addBtn.forEach(btn => {
+                btn.addEventListener('click', function() {
+                   
+                    let value=btn.previousElementSibling.innerText;
+                    filmList.forEach(film => {
+                        if(film.name===value){
+                            MyList.push(film)
+                            console.log(MyList)
+                            showMyList();
+                        }
+                        
+                    });
+                })
+                
+            });
+      }
+
+
+
+
+      function displayFilm(films, filmsNames) {
+
+            films.forEach((film, index)=> {
+            film.addEventListener('click', function() {
+                let filmTitle=filmsNames[index].innerText
+                console.log(filmTitle)
+                showPickedFilm(filmTitle);
+                console.log(filmList[index].description)
+
+                    let filmWrapper=document.querySelectorAll(".film-wrapper")
+                    let image=document.querySelectorAll(".img-content")
+                    let closeBtn = document.querySelectorAll(".close")
+                    closeBtn.forEach((element, index) => {
+                    element.addEventListener('click', function() {
+                    
+                    let filmElement=filmWrapper[index]
+                    let imgContent = image[index]
+                    filmElement.remove();
+                    imgContent.remove()
+                    })
+                });
+            })
+            });
+}
+
+        function showPickedFilm(filmTitle) {
+            let row=document.querySelectorAll(".chosenFilm")
+           filmList.forEach(film => {
+               if(film.name===filmTitle) {
+                 let Element= `
+            <div class="film-wrapper"
+                    <div  style=" width: 40%;" >
+                    
+                        <div class="px-4">
+                            <img src="./img/${film.logo}" />
+                          
+                        </div>
+                        <h4 class="mx-4 my-4">${film.year} <span class="mx-2">8 seasons</span></h4>
+                        <p class="mt-4 mx-4" style="flex-wrap: wrap; color:#666666; font-size: 1.4rem; font-weight: 300;">${film.description}</p>
+                            <button type="button" class="btn mx-4" style="background-color:whitesmoke; font-size: 1.3rem; font-weight: bold; padding: 10px 15px;"><i class="fa fa-play" ></i>RESUME</button>
+                            <button type="button" class="btn btn-secondary " style="font-size: 1.3rem; font-weight: bold; padding: 10px 15px;" ><i class="fa fa-check-square-o"></i>MY LIST</button>
+                    </div>
+                    <div class="img-content" style=" position: relative; box-shadow: inset  130px 0 80px 0px  #141414; width: 60%;"   > 
+                        <button type="button " class="close" aria-label="Close" style="position:absolute; z-index:1; right:10px; top:10px; ">
+                        <span style="font-size:1.5rem" aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/${film.image_lg}" style="position:relative; z-index: -1; width: 100%; height: 600px; object-fit:cover;" />
+                    </div>
+            </div>
+
+            `;
+            row[0].innerHTML=Element   
+               }
+           });
+           
+            
+        }
+        const MyList=[];
+
+        function showMyList() {
+           let listRow=document.querySelector('.myList');
+            const MyListSlider =[]
+            MyList.forEach(film => {
+                let element=`
+                <div class="film">
+                    <a href="#"><img src="./img/${film.image}" alt=""></a>
+                    <div class="card-img-overlay imageTitle">
+                    <h5 class="card-title" style=" position:absolute; left:15px; top:70%">${film.name}</h5>
+                  
+                    </div>
+                </div>
+                `
+                MyListSlider.push(element)
+            });
+            listRow.innerHTML=MyListSlider.join('');
+        }
+        
+
+        window.onload =function() {
+            showFilmList()
+            showRow2()
+                let films =document.querySelectorAll('.film')
+                let filmsNames =document.querySelectorAll('.card-title') 
+            displayFilm(films, filmsNames);
+
+            addBtn=document.querySelectorAll('.addToList')
+            addToList(addBtn);
+           
       
+        }
+
+</script>
+<script
+src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"
+></script>
+<script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+crossorigin="anonymous"
+></script>
+
+</body>
 
 
           
     
 
 
-</body>
-<script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-          
-
-const cardOverlay= document.querySelectorAll(".card-img-overlay")
-const row = document.querySelectorAll('.carousel-content');
-const films = document.querySelectorAll('.film');
-
-const leftArrow = document.getElementById('left-arrow');
-const rightArrow = document.getElementById('right-arrow');
-
-const leftArrowRow2 = document.getElementById('left-arrow2');
-const rightArrowRow2 = document.getElementById('right-arrow2');
-
-rightArrow.addEventListener('click', () => {
-	row[0].scrollLeft += row[0].offsetWidth;
-});
-
-rightArrowRow2.addEventListener('click', () => {
-	row[1].scrollLeft += row[1].offsetWidth;
-});
-
-
-
-leftArrow.addEventListener('click', () => {
-	row[0].scrollLeft -= row[0].offsetWidth;
-});
-leftArrow.addEventListener('click', () => {
-	row[1].scrollLeft -= row[1].offsetWidth;
-});
-
-
-// films.forEach((film) => {
-// 	film.addEventListener('mouseenter', (e) => {
-// 		const element = e.currentTarget;
-// 		setTimeout(() => {
-// 			films.forEach(film => film.classList.remove('hover'));
-//             cardOverlay.forEach(card=>card.setAttribute("style", "display:none") );
-// 			element.classList.add('hover');
-//              cardOverlay.forEach(card=>card.setAttribute("style", "display:block") );
-            
-// 		}, 300);
-// 	});
-// });
-
-// ;
-
-// for (let i=0; i<row.length; i++) {
-//     row[i].addEventListener('mouseleave', () => {
-// 	films.forEach(film => film.classList.remove('hover'));
-//     cardOverlay.forEach(card=>card.setAttribute("style", "display:none") );
-
-// });
-
-// }
-
-
-
-    </script>
   
 </html>
