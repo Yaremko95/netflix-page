@@ -661,19 +661,22 @@
            filmList.forEach(film => {
                if(film.name===filmTitle) {
                  let Element= `
-            <div class="film-wrapper"
-                    <div  style=" width: 40%;" >
+            <div class=" row film-wrapper">
+                <div class="col-4">
+                   
                     
                         <div class="px-4">
-                            <img src="./img/${film.logo}" />
+                            <img class="img-fluid" src="./img/${film.logo}" />
                           
                         </div>
+        
                         <h4 class="mx-4 my-4">${film.year} <span class="mx-2">8 seasons</span></h4>
                         <p class="mt-4 mx-4" style="flex-wrap: wrap; color:#666666; font-size: 1.4rem; font-weight: 300;">${film.description}</p>
-                            <button type="button" class="btn mx-4" style="background-color:whitesmoke; font-size: 1.3rem; font-weight: bold; padding: 10px 15px;"><i class="fa fa-play" ></i>RESUME</button>
+                            <button type="button" class="btn mx-4" style="background-color:whitesmoke; font-size: 1.1rem; font-weight: bold; padding: 10px 15px;"><i class="fa fa-play" ></i>RESUME</button>
                             <button type="button" class="btn btn-secondary " style="font-size: 1.3rem; font-weight: bold; padding: 10px 15px;" ><i class="fa fa-check-square-o"></i>MY LIST</button>
-                    </div>
-                    <div class="img-content" style=" position: relative; box-shadow: inset  130px 0 80px 0px  #141414; width: 60%;"   > 
+                </div>
+
+                    <div class="col-8 img-content" style=" position: relative; box-shadow: inset  130px 0 80px 0px  #141414; "   > 
                         <button type="button " class="close" aria-label="Close" style="position:absolute; z-index:1; right:10px; top:10px; ">
                         <span style="font-size:1.5rem" aria-hidden="true">&times;</span>
                         </button>
