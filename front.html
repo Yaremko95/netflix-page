@@ -212,25 +212,35 @@
 
 
     rightArrow.addEventListener('click', () => {
-        row[0].scrollLeft += row[0].offsetWidth;
-    });
-
-    
-    leftArrow.addEventListener('click', () => {
-        row[0].scrollLeft -= row[0].offsetWidth;
-    });
-
-    rightArrow2.addEventListener('click', () => {
         row[1].scrollLeft += row[1].offsetWidth;
     });
 
     
-    leftArrow2.addEventListener('click', () => {
+    leftArrow.addEventListener('click', () => {
         row[1].scrollLeft -= row[1].offsetWidth;
+    });
+
+    rightArrow2.addEventListener('click', () => {
+        row[2].scrollLeft += row[2].offsetWidth;
+    });
+
+    
+    leftArrow2.addEventListener('click', () => {
+        row[2].scrollLeft -= row[2].offsetWidth;
     });
   
 
     const filmList=[
+    {
+            name: "Noah",
+            image:"noah.jpg",
+            image_lg: "noah_lg.jpg",
+            logo: "noah_logo.jpg",
+            genre: "drama",
+            year: "2014",
+            description:`This ambitious adaptation of the story of Noah depicts the visions that led him to voice dire prophesis of apocalypse and to build an ark to survive`
+
+        },
         {
             name: "The 100",
             image:"hundred.png",
@@ -267,6 +277,7 @@
                         intimidating warning from Earl Haraldson`
 
         },
+
         {
             name: "Outlander",
             image:"outlander.png",
@@ -276,6 +287,18 @@
             year: "2017",
             description:`While on a second honeymoon in Scotland, former army nurse Claire 
                 sumbles on a gateaway to the past and falls in with a band of Highland robels;`
+
+        },
+        {
+            name: "Madagascar 3",
+            image:"madagascar.jpg",
+            image_lg: "madagascar-lg.jpg",
+            logo:"madagascar_logo.jpg",
+            genre: "comedy",
+            year: "2012",
+            description:`Regnar Lothbrok is determined to sail west to discover 
+                        new lands and riches despite an
+                        intimidating warning from Earl Haraldson`
 
         },
         {
@@ -313,76 +336,53 @@
             description:`While investigating a bizarre case, a New York City police officer meets a priest who convinces him the incident is related to demonic possession`
 
         },
-        // {
-        //     name: "Vikings ",
-        //     image:"vikings.jpg",
-        //     image_lg: "vikings_lg.jpg",
-        //     logo:"vikings_logo.jpg",
-        //     genre: "drama",
-        //     year: "2019",
-        //     description:`Regnar Lothbrok is determined to sail west to discover 
-        //                 new lands and riches despite an
-        //                 intimidating warning from Earl Haraldson`
-
-        // },
         {
-            name: "Friends with benefits",
-            image:"friends-with-benefites.jpg",
-            image_lg: "friends-with-benefites_lg.jpg",
-            logo:"friends-with-benefites_logo.jpg",
-            genre: "comedy",
-            year: "2011",
-            description:`Casual sex is just what these commitment-phobic friends crave. But romance has a funny way of sneaking up on people...`
+            name: "Peaky Blinders",
+            image:"peaky-blinders.jpg",
+            image_lg: "peaky-blinders_lg.jpg",
+            logo:"peaky-blinders_logo.jpg",
+            genre: "drama",
+            year: "2019",
+            description:`A notorious gang in 1919 Birmingham, England,
+                 is led by the fierce Tommy Shelby, a crime boss set on moveng 
+                 up in the world no matter the cost`
 
         },
-        // {
-        //     name: "Suits",
-        //     image:"suits.png",
-        //     image_lg: "suits_lg.jpg",
-        //     logo:"suits_logo.png",
-        //     genre: "drama",
-        //     year: "2019",
-        //     description:`When Harvey's promotion requires him to recruit and
-        //          hire a graduate of Harvard Law, he chooses Mike Ross. 
-        //          But Mike doesn't actually have a law degree`
+        {
+            name: "Prison Break",
+            image:"prisonBreak.jpg",
+            image_lg: "prison-break-lg.jpg",
+            logo:"prisonBreak_logo.jpg",
+            genre: "drama",
+            year: "2017",
+            description:`Whe his brother is wrongly convinced of murder,
+                 a structural engineer resolves to bust his sibling out of the notorious Fox River Penitentiary`
 
-        // },
-        // {
-        //     name: "The 100",
-        //     image:"hundred.png",
-        //     image_lg: "hundred_lg.png",
-        //     logo: "hundred_logo.png",
-        //     genre: "drama",
-        //     year: "2018",
-        //     description:`One hundred young exiles from a dying 
-        //             space station are sent to Earth 97 years after
-        //              a nuvlear apocalypse to test if the planet is now inhabitable`
+        },
+        {
+            name: "Theory of Everything",
+            image:"theoryOfEverything.jpg",
+            image_lg: "theoryOfEverything_lg.jpg",
+            logo:"theoryOfEverything_logo.jpg",
+            genre: "drama",
+            year: "2019",
+            description:`As his esteem grows in the world of physics, Stephen Hawking;s body is revaged by ALS, forcing his increasing dependence on his devoted wife, Jane.`
 
-        // },
-        // {
-        //     name: "Friends",
-        //     image:"friends.png",
-        //     image_lg: "friends-big.jpg",
-        //     logo: "friends-logo.png",
-        //     genre: "comedy",
-        //     year: "2018",
-        //     description:`Rachel runs from her wedding and meets the friends in the coffe place. 
-        //             Ross is depressed about his divorce but 
-        //             he still has a crush on Rachel`
+        },
+        {
+            name: "The 100",
+            image:"hundred.png",
+            image_lg: "hundred_lg.png",
+            logo: "hundred_logo.png",
+            genre: "drama",
+            year: "2018",
+            description:`One hundred young exiles from a dying 
+                    space station are sent to Earth 97 years after
+                     a nuvlear apocalypse to test if the planet is now inhabitable`
 
-        // },
-        // {
-        //     name: "Vikings ",
-        //     image:"vikings.jpg",
-        //     image_lg: "vikings_lg.jpg",
-        //     logo:"vikings_logo.jpg",
-        //     genre: "drama",
-        //     year: "2019",
-        //     description:`Regnar Lothbrok is determined to sail west to discover 
-        //                 new lands and riches despite an
-        //                 intimidating warning from Earl Haraldson`
-
-        // },
+        },
+     
+        
         // {
         //     name: "Outlander",
         //     image:"outlander.png",
@@ -520,9 +520,11 @@
              document.getElementById("genres").addEventListener('change', function(e) {
             let filmCarousel= document.querySelector(".recommended .carousel")
             let genreTitle=document.querySelector('.genreTitle')
+            let rowTitle=document.querySelector('.recommended h4')
             const filmSlider =[]
                if(e.target.value==="drama") {
                 genreTitle.innerText="Drama films"
+                rowTitle.innerText="Drama films"
                 filmList.forEach(film => {
                     if(film.genre==="drama") {
                         let element=`
@@ -542,6 +544,7 @@
             });
             } else if (e.target.value==="comedy") {
                 genreTitle.innerText="Comedy films"  
+                rowTitle.innerText="Comedy films"
                 filmList.forEach(film => {
                     if(film.genre==="comedy") {
                         let element=`
@@ -560,6 +563,7 @@
             });
             } else if (e.target.value==="horror") {
                 genreTitle.innerText="Horror films"
+                rowTitle.innerText="Horror films"
                 filmList.forEach(film => {
                     if(film.genre==="horror") {
                         let element=`
