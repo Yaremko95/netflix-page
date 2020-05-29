@@ -142,6 +142,33 @@ crossorigin="anonymous"
 ></script>
 <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
 <script src="js/helper.js"></script>
+<script>
+  
+        var prod_id;
+       window.onload = async () => {
+        let urlParams = new URLSearchParams(window.location.search);
+        prod_id = urlParams.get("id");
 
+    let titleInput = document.querySelector('#title')
+     let descInput = document.querySelector('#description')
+     let imgInput = document.querySelector('#imgUrl')
+     let imgLgInput =document.querySelector('#img_lg_url')
+     let logoInput = document.querySelector('#logoUrl')
+     let genreInput = document.querySelector('#genre')
+
+        if(prod_id) {
+          let movie = await getMovieById(prod_id)
+          console.log(movie)
+          titleInput.value=movie.name;
+          descInput.value=movie.description;
+          imgInput.value=_.words(movie.imageUrl, /[^, ]+/g )[0];
+          imgLgInput.value = _.words(movie.imageUrl, /[^, ]+/g )[1];
+          logoInput.value =  _.words(movie.imageUrl, /[^, ]+/g )[2];
+          genreInput.value=movie.category
+        }
+       }
+    
+</script>
+    
     </body>
     </html>

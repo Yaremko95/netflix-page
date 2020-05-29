@@ -67,7 +67,7 @@
     <a href="#" class="navIcons" style="color: white; text-decoration: none;"><b>KIDS</b></a>
    
     <a href="#" class="navIcons" style="box-sizing: border-box; color: white; text-decoration: none;" ><i class="fa fa-bell"></i></a>
-    <a href="account.html" class="navIcons" style="box-sizing: border-box; color: white; text-decoration: none;" ><i class="material-icons">person</i></a>
+    <a href="movie_list.html" class="navIcons" style="box-sizing: border-box; color: white; text-decoration: none;" ><i class="material-icons">person</i></a>
 
     <div class="pagination">
         
@@ -139,7 +139,7 @@
     <div class="row ml-4 ">
         <button role="button" id="left-arrow" class="left-arrow"> <span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
         <div class="carousel-content recommended">
-            <h4 class="pt-4">Recommended by NetFlix</h4>
+            <h4 class="pt-4">Comedies</h4>
                 <div class="carousel">
             </div>
         </div>
@@ -152,13 +152,13 @@
        
         <button role="button" id="left-arrow2" class="left-arrow"> <span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
         <div class="carousel-content popular">
-            <h4 class="pt-4">Popular on Netflix</h4>
+            <h4 class="pt-4">Dramas</h4>
                 <div class="carousel">
             </div>
         </div>
          <button role="button" id="right-arrow2" class="right-arrow"><span class="carousel-control-next-icon" aria-hidden="true"></button>
     </div>
-    <div class="row  "  style="justify-content: space-between;" >
+    <div class="row chosenFilm "  style="justify-content: space-between;" >
    
     </div>
 </div>
@@ -714,7 +714,7 @@
 
         window.onload =function() {
             addToCarousel()
-            // showRow2()
+            showDramas()
             //     let films =document.querySelectorAll('.film')
             //     let filmsNames =document.querySelectorAll('.card-title') 
             // displayFilm(films, filmsNames);
