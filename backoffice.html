@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./style.css">
+<style>
+
+
+    .custom-select {
+        background-color: black;
+        color: inherit;
+    }
+    .form-control {
+        background-color: grey;
+        
+    }
+    .form-control::-webkit-input-placeholder { /* Edge */
+        color: white;
+            }
+
+      
+</style>
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: black!important;">
+        <a class="navbar-brand" href="#" style="font-family: Aclonica; font-size: 30px; color: red; padding-left: 40px; border-start-start-radius: 30px;">NETFLIX</a>
+     </nav>
+    
+   
+
+    <div class="container mt-4 pt-4">
+        <h1 class=" display-5 text-center mt-4 ">Add product</h1>
+      <form>
+            <div class="row px-4 mx-4" >
+          
+                <div class="col-3">
+                  
+                </div>
+                  <div class="col-6">
+                    <div class="input-group mt-4 pt-2 d-flex flex-column">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control  " id="title" placeholder="Film title" aria-label="Username" aria-describedby="basic-addon1">
+                        <div class="invalid-feedback">
+                            Title is required
+                        </div>
+                    </div>
+                    <div class="input-group mt-4 pt-2 d-flex flex-column">
+                        <label for="description">Description</label>
+                        <textarea class="form-control" id="description" rows="4"></textarea>
+                        <div class="invalid-feedback">
+                            Description is required
+                        </div>
+                    </div>
+                    <div class="input-group mt-4 pt-2 d-flex flex-column">
+                        <label for="imgUrl">Image URL</label>
+                        <input type="text" class="form-control " id="imgUrl" placeholder="image URL" aria-label="Username" aria-describedby="basic-addon1">
+                        <div class="invalid-feedback">
+                            Image URL is required
+                        </div>
+                    </div>
+                    <div class="input-group mt-4 pt-2 d-flex flex-column">
+                        <label for="img_lg_url">URL for large image</label>
+                        <input type="text" class="form-control " id="img_lg_url" placeholder="image_lg URL" aria-label="Username" aria-describedby="basic-addon1">
+                        <div class="invalid-feedback">
+                            URL is required
+                        </div>
+                    </div>
+                    <div class="input-group mt-4 pt-2 d-flex flex-column">
+                        <label for="logo">URL for Ligi</label>
+                        <input type="text" class="form-control  " id="logo" placeholder="logo URL" aria-label="Username" aria-describedby="basic-addon1">
+                        <div class="invalid-feedback">
+                            URL is required
+                        </div>
+                    </div>
+          
+                    
+                    <div class="input-group mt-4 ">
+                        <select class="custom-select w-100" id="inputGroupSelect01" >
+                          <option selected>Choose the film genre</option>
+                          <option value="1">comedy</option>
+                          <option value="2">drama</option>
+                          <option value="3">horror</option>
+                        </select>
+                      </div>
+                  </div>
+                  <div class="col-3"> 
+                       
+                  </div>
+            </div>
+          
+            <div class="row mt-4 px-4 mx-4 justify-content-center">
+              
+                <div class="col-4">
+                    <button type="submit" class="btn btn-outline-secondary" style="width: 100%;">Add film</button>
+                </div>
+            </div>
+      </form>
+    </div>
+
+
+
+
+
+
+
+
+<script
+src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"
+></script>
+<script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+
+    </body>
+    </html>
